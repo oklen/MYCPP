@@ -21,6 +21,11 @@ int main()
   for (count = 0; count < ARRAY_SIZE; count++)
     cout << number[count] << " ";
   cout << endl;
+  cout << "Show C++ 11 New Feature." << endl;
+  for (int val:number)
+    {
+      cout << val << endl;
+    }
   char b;
   cin >> b;
   return 0;
