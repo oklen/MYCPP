@@ -27,9 +27,9 @@ int  main()
 
 void display(auto seats)
 {
-  for (int i=0;i<10;i++)
+  for (auto i=0;i<10;i++)
     {
-      for (int j=0;j<10;j++)
+      for (auto j=0;j<10;j++)
         {
           cout << seats[i][j];
         }
@@ -39,9 +39,9 @@ void display(auto seats)
 
 void fill(auto seats)
 {
-  for (int i=0;i<10;i++)
+  for (auto i=0;i<10;i++)
     {
-      for (int j=0;j<10;j++)
+      for (auto j=0;j<10;j++)
         {
           seats[i][j] = '+';
         }
