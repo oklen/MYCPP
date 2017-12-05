@@ -1,0 +1,59 @@
+#pragma once
+#include<iostream>
+#include<string>
+#include<vector>
+#ifndef PATIENT_H
+#define PATHENT_H
+
+using namespace std;
+
+struct accout
+{
+	float money;
+	string date;
+};
+
+struct surgeryaccout
+{
+  float money;
+  string name;
+};
+
+struct pharmacyaccout
+{
+  float money;
+  string name;
+};
+
+class PatientAccount
+{
+private:
+  float Total_money;
+  vector<accout> myaccount;
+public:
+  void insert(accout);
+
+  void list() const;
+};
+
+class Surgery
+{
+private:
+  surgeryaccout*  myaccout[10];
+public:
+	Surgery();
+  void update(string, float);
+  void insert(string, float);
+  void display();
+};
+
+class Pharmacy
+{
+private:
+  pharmacyaccout * myaccount[10];
+public:
+  void update(string, float);
+  void display();
+};
+
+#endif;
