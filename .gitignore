@@ -2,3 +2,8 @@
 *.obj
 *.pdb
 *.db
+*.tlog
+*.log
+*.idb
+*.vcxproj
+*.opendb
